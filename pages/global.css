@@ -1,23 +1,100 @@
 /* theme */
 :root{
-   
+    /* color theme */
+   --background-peach: #FDEEDC; 
+   --button-marndarin: #FBA660;
+   --button-grape: #8D6CA3;
+   --button-mint: #AACB9F;
+   --accent-plum: #A95A74;
+   --accent-lightblue: #539DC2;
+   --accent-blue: #2E5AAC;
+   --headers-brick: #B85A38;
+   --headers-lemon: #FDF277;
+}
+
+@font-face {
+  font-family: rope;
+  src: url(/assets/fonts/rope-mf-font/RopeMf-WVA9.ttf);
+}
+
+@font-face {
+  font-family: neonderthaw;
+  src: url(/assets/fonts/Neonderthaw/Neonderthaw-Regular.ttf);
+}
+
+@font-face {
+  font-family: londrina-sketch;
+  src: url(/assets/fonts/Londrina_Sketch/LondrinaSketch-Regular.ttf);
+}
+
+@font-face {
+  font-family: londrina-shadow;
+  src: url(/assets/fonts/Londrina_Shadow/LondrinaShadow-Regular.ttf);
+}
+
+@font-face {
+  font-family: fredricka;
+  src: url(/assets/fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf);
+}
+
+@font-face {
+  font-family: courier-prime;
+  src: url(/assets/fonts/Courier_Prime/CourierPrime-Regular.ttf);
+}
+
+@font-face {
+  font-family: bitcount;
+  src: url(/assets/fonts/Bitcount_Prop_Single/BitcountPropSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
+
+@font-face {
+  font-family: menlo;
+  src: url(/assets/fonts/Menlo-Regular.ttf);
+}
+
+/* all */
+/* Universal reset for margin and padding */
+html, body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0; 
+    padding: 0; 
+    font-family: courier-prime;
+    background-color: var(--background-peach);
+    color: var(--accent-plum)
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: rope;
+    text-decoration: none;
+    font-size: 80px;
+}
+nav ul{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    font-family: fredricka;
+    color: var(--headers-lemon);
+    font-size: x-large;
+}
+
+nav a, nav ul {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--headers-brick);
 }
 
 
-/* all */
 
-/* welcome */
-
-/* about */
-
-/* advice */
-
-/* our house */
-
-/* our city */
-
-/* our neighborhood */
-
-/* getting around */
 
 /* animations */
