@@ -1,15 +1,21 @@
 /* theme */
 :root{
     /* color theme */
-   --background-peach: #FDEEDC; 
+   --background-peach: #FDEEDC;
+   --nav-creamsicle: #FCD5B5; 
    --button-marndarin: #FBA660;
    --button-grape: #8D6CA3;
    --button-mint: #AACB9F;
+   --button-cherry: #D95D67;
+   --button-blueberry: #A3B4D9;
+   --button-lavender: #D8AACC;
+   --button-concord: #6C4A7F;
    --accent-plum: #A95A74;
    --accent-lightblue: #539DC2;
    --accent-blue: #2E5AAC;
    --headers-brick: #B85A38;
    --headers-lemon: #FDF277;
+
 }
 
 @font-face {
@@ -54,27 +60,63 @@
 
 /* all */
 /* Universal reset for margin and padding */
-html, body { 
+html{
+  scroll-behavior: smooth;
+}
+body{ 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin: 0; 
+    margin: 1%; 
     padding: 0; 
     font-family: courier-prime;
     background-color: var(--background-peach);
     color: var(--accent-plum)
 }
-nav{
+
+main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    max-width: 75%;
+    margin: 5%; 
+    padding: 0; 
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;  
+    flex-wrap: nowrap;
+    border: 2px solid var(--button-concord);
+    padding: 50px;
+    border-radius: 10px;
+    background-color: var(--nav-creamsicle);
+}
+
+nav, nav ul{
+    display: flex;
+    top: 0;
+    gap: 10px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
     font-family: rope;
     text-decoration: none;
     font-size: 80px;
+    background-color: var(--nav-creamsicle);
 }
+
+nav{
+    position: sticky;
+    align-self: stretch;
+    align-items: center;
+    justify-items: center;
+    z-index: 1;
+    background-color: var(--nav-creamsicle);
+}
+
 nav ul{
     display: flex; 
     flex-direction: row;
@@ -82,7 +124,7 @@ nav ul{
     flex-shrink: 1;
     flex-grow: 1;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
     font-family: fredricka;
     color: var(--headers-lemon);
     font-size: x-large;
@@ -93,6 +135,48 @@ nav a, nav ul {
     list-style-type: none;
     color: var(--headers-brick);
 }
+
+h1{
+  font-size: 65px;
+}
+
+.game-button1{
+    background-color: var(--button-grape);
+    color: var(--button-marndarin);
+    padding: 2px;
+    border: 5px solid var(--accent-lightblue);
+    border-radius: 10% 10% 10% 10%;
+}
+.game-button2{
+    background-color: var(--headers-lemon);
+    color: var(--headers-brick);
+    padding: 2px;
+    border: 5px solid var(--accent-blue);
+    border-radius: 10% 10% 10% 10%;
+}
+
+.game-button3{
+    background-color: var(--button-lavender);
+    padding: 2px;
+    border: 5px solid var(--accent-lightblue);
+    border-radius: 10% 10% 10% 10%;
+}
+
+.express{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  font-size: 2em;
+  max-width: 75%;
+}
+
+.express li, .express a {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 2%;
+  padding:.25em;
+}
+
 
 
 
