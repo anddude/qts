@@ -110,25 +110,30 @@ nav, nav ul{
 
 nav{
     position: sticky;
-    align-self: stretch;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
     z-index: 1;
     background-color: var(--nav-creamsicle);
+    width: 75%;
+    margin: 1%
 }
 
 nav ul{
     display: flex; 
     flex-direction: row;
-    flex-wrap: wrap;
-    flex-shrink: 1;
-    flex-grow: 1;
     align-items: center;
     justify-items: center;
+    flex-wrap: wrap;
     font-family: fredricka;
     color: var(--headers-lemon);
     font-size: x-large;
 }
+
+
 
 nav a, nav ul {
     text-decoration: none;
@@ -136,7 +141,16 @@ nav a, nav ul {
     color: var(--headers-brick);
 }
 
+#site-name{
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+}
+
 h1{
+  text-align: center;
   font-size: 65px;
 }
 
@@ -166,6 +180,7 @@ h1{
   display: flex; 
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   font-size: 2em;
   max-width: 75%;
 }
@@ -177,6 +192,17 @@ h1{
   padding:.25em;
 }
 
+@media screen and (width < 600px){
+  h1{
+    font-size: 35px;
+  }
+nav li {
+    margin: 2%;
+}
+.express{
+
+}
+}
 
 
 
