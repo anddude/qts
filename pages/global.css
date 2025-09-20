@@ -105,7 +105,6 @@ nav, nav ul{
     font-family: rope;
     text-decoration: none;
     font-size: 80px;
-    background-color: var(--nav-creamsicle);
 }
 
 nav{
@@ -119,7 +118,8 @@ nav{
     z-index: 1;
     background-color: var(--nav-creamsicle);
     width: 75%;
-    margin: 1%
+    margin: 1%;
+
 }
 
 nav ul{
